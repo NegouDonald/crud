@@ -1,0 +1,40 @@
+/* creation_utilisateur.css */
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+input.form-control {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

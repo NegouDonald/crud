@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Créer un utilisateur{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h3>Page de connexion</h3>
+    </div>
+    <div class="card-body">
+
+        {% if messages %}
+        <div class="alert alert-info">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom :</label>
+                <input type="text" name="nom" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="prenom" class="form-label">PreNom :</label>
+                <input type="text" name="prenom" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="mot_de_passe" class="form-label">Mot de passe :</label>
+                <input type="password" name="mot_de_passe" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Connexion</button>
+            <a href="/" class="btn btn-secondary">Retour</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

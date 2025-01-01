@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'crud/css/accueil.css' %}">
+    <title>Bienvenue chez TechWave</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue dans l'application CRUD</h1>
+        <p>Gérez vos utilisateurs facilement avec cette application. Créez, modifiez et supprimez des utilisateurs en quelques clics.</p>
+        <a href="{% url 'login' %}">Commencer</a>
+    </div>
+</body>
+</html>
